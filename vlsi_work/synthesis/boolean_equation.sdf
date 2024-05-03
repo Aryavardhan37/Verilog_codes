@@ -1,0 +1,27 @@
+(DELAYFILE
+   (SDFVERSION "3.0")
+   (DESIGN "boolean_equation")
+   (DATE "12:33:18 Sunday October 22, 2023")
+   (VENDOR "unknown")
+   (PROGRAM "qrouter")
+   (VERSION "unknown")
+   (DIVIDER /)
+   (TIMESCALE 1 ps)
+   (CELL
+      (CELLTYPE "boolean_equation")
+      (INSTANCE)
+      (DELAY
+         (ABSOLUTE
+            (INTERCONNECT B NAND2X1_1/A (0.0407157))
+            (INTERCONNECT A NAND2X1_1/B (0.0404337))
+            (INTERCONNECT NAND2X1_1/Y AND2X2_1/B (0.0498812))
+            (INTERCONNECT D NAND3X1_1/A (0.0512613))
+            (INTERCONNECT C NAND3X1_1/B (0.0505111))
+            (INTERCONNECT E NAND3X1_1/C (0.0495686))
+            (INTERCONNECT NAND3X1_1/Y AND2X2_1/A (0.0244627))
+            (INTERCONNECT AND2X2_1/Y BUFX2_1/A (0.0135219))
+            (INTERCONNECT BUFX2_1/Y F (0.00221404))
+         )
+      )
+   )
+)

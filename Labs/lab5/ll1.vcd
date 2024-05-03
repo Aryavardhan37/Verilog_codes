@@ -1,0 +1,47 @@
+$date
+	Wed Feb  7 15:37:36 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_ll1 $end
+$var wire 5 ! add [4:0] $end
+$var wire 4 " S [3:0] $end
+$var wire 1 # Cout $end
+$var reg 4 $ A [3:0] $end
+$var reg 4 % B [3:0] $end
+$var reg 1 & Cin $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0&
+b0 %
+b1 $
+0#
+b1 "
+b1 !
+$end
+#3
+b111 !
+b111 "
+1&
+b100 %
+b10 $
+#6
+1#
+b10001 !
+b1 "
+0&
+b110 %
+b1011 $
+#9
+0#
+b1001 !
+b1001 "
+1&
+b11 %
+b101 $

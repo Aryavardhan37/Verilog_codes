@@ -1,0 +1,50 @@
+* XSpice netlist created from SPICE and liberty sources by spi2xspice.py
+*SPICE netlist created from BLIF module logicfunctions by blif2BSpice
+.subckt logicfunctions a_vdd a_gnd a_x1 a_x2 a_x3 a_x4 a_g a_h a_f
+AINVX1_1 [x2] _1_ d_lut_INVX1
+AOAI22X1_1 [_0_ x1 x4 _1_] _2_ d_lut_OAI22X1
+AINVX1_2 [_2_] _6_ d_lut_INVX1
+ANAND2X1_1 [_3_ _2_] _4_ d_lut_NAND2X1
+ABUFX2_1 [_4_] f d_lut_BUFX2
+ABUFX2_2 [_5_] g d_lut_BUFX2
+ABUFX2_3 [_6_] h d_lut_BUFX2
+AAOI22X1_1 [x1 x3 x4 x2] _3_ d_lut_AOI22X1
+AINVX1_3 [_3_] _5_ d_lut_INVX1
+AINVX1_4 [x3] _0_ d_lut_INVX1
+
+.model todig_1v8 adc_bridge(in_high=1.2 in_low=0.6 rise_delay=1n fall_delay=1n)
+.model toana_1v8 dac_bridge(out_high=1.8 out_low=0)
+
+.model ddflop d_dff(ic=0 rise_delay=100p fall_delay=100p)
+.model dzero d_pulldown(load=500f)
+.model done d_pullup(load=500f)
+
+AA2D1 [a_vdd] [vdd] todig_1v8
+AA2D2 [a_gnd] [gnd] todig_1v8
+AA2D3 [a_x1] [x1] todig_1v8
+AA2D4 [a_x2] [x2] todig_1v8
+AA2D5 [a_x3] [x3] todig_1v8
+AA2D6 [a_x4] [x4] todig_1v8
+AD2A1 [g] [a_g] toana_1v8
+AD2A2 [h] [a_h] toana_1v8
+AD2A3 [f] [a_f] toana_1v8
+
+.ends logicfunctions
+ 
+
+* INVX1 (!A)
+.model d_lut_INVX1 d_lut (rise_delay=100p fall_delay=100p input_load=500f
++ table_values "10")
+* OAI22X1 (!((A+B) (C+D)))
+.model d_lut_OAI22X1 d_lut (rise_delay=100p fall_delay=100p input_load=500f
++ table_values "1111100010001000")
+* NAND2X1 (!(A B))
+.model d_lut_NAND2X1 d_lut (rise_delay=100p fall_delay=100p input_load=500f
++ table_values "1110")
+* BUFX2 A
+.model d_lut_BUFX2 d_lut (rise_delay=100p fall_delay=100p input_load=500f
++ table_values "01")
+* AOI22X1 (!((A B)+(C D)))
+.model d_lut_AOI22X1 d_lut (rise_delay=100p fall_delay=100p input_load=500f
++ table_values "1110111011100000")
+.end

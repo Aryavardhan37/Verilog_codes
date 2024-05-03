@@ -1,0 +1,57 @@
+[
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "full_adder",
+      "full_adder"
+   ],
+   "devices": [
+       [
+         ["BUFX2", 2 ]
+       ], [
+         ["BUFX2", 2 ]
+       ]
+   ],
+   "nets": [
+    4,
+    4
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "cout",
+        "sum",
+        "vdd",
+        "a",
+        "b",
+        "cin",
+        "(no matching pin)"
+      ], [
+        "cout",
+        "sum",
+        "vdd",
+        "a",
+        "b",
+        "cin",
+        "gnd"
+      ]
+   ]
+  }
+]

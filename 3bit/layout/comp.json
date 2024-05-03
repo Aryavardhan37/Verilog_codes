@@ -1,0 +1,194 @@
+[
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "Q",
+        "CLK",
+        "R",
+        "S",
+        "D",
+        "gnd",
+        "vdd"
+      ], [
+        "Q",
+        "CLK",
+        "R",
+        "S",
+        "D",
+        "gnd",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "down_counter_3bit",
+      "down_counter_3bit"
+   ],
+   "devices": [
+       [
+         ["NAND3X1", 1],
+         ["OAI21X1", 1],
+         ["BUFX2", 3],
+         ["INVX2", 1],
+         ["NAND2X1", 1],
+         ["DFFSR", 3],
+         ["INVX1", 3],
+         ["XNOR2X1", 1 ]
+       ], [
+         ["NAND3X1", 1 ],
+         ["OAI21X1", 1 ],
+         ["BUFX2", 3 ],
+         ["INVX2", 1 ],
+         ["NAND2X1", 1 ],
+         ["DFFSR", 3 ],
+         ["INVX1", 3 ],
+         ["XNOR2X1", 1 ]
+       ]
+   ],
+   "nets": [
+    18,
+    18
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "rst",
+        "count[1]",
+        "count[0]",
+        "count[2]",
+        "clk",
+        "vdd",
+        "gnd"
+      ], [
+        "rst",
+        "count[1]",
+        "count[0]",
+        "count[2]",
+        "clk",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  }
+]

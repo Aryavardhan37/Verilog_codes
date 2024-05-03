@@ -1,0 +1,350 @@
+magic
+tech scmos
+magscale 1 2
+timestamp 1697776516
+<< metal1 >>
+rect 264 406 270 414
+rect 278 406 284 414
+rect 292 406 298 414
+rect 306 406 312 414
+rect 781 337 835 343
+rect 653 317 684 323
+rect 749 317 771 323
+rect 812 304 820 308
+rect 45 297 67 303
+rect 61 277 67 297
+rect 852 297 867 303
+rect 157 277 220 283
+rect 589 277 611 283
+rect 653 277 723 283
+rect 893 277 908 283
+rect 589 264 595 277
+rect 120 236 124 244
+rect 740 236 742 244
+rect 728 206 734 214
+rect 742 206 748 214
+rect 756 206 762 214
+rect 770 206 776 214
+rect 820 177 851 183
+rect 868 117 883 123
+rect 264 6 270 14
+rect 278 6 284 14
+rect 292 6 298 14
+rect 306 6 312 14
+<< m2contact >>
+rect 270 406 278 414
+rect 284 406 292 414
+rect 298 406 306 414
+rect 524 376 532 384
+rect 524 316 532 324
+rect 684 316 692 324
+rect 12 276 20 284
+rect 316 296 324 304
+rect 620 296 628 304
+rect 780 296 788 304
+rect 812 296 820 304
+rect 844 296 852 304
+rect 220 276 228 284
+rect 428 276 436 284
+rect 572 276 580 284
+rect 908 276 916 284
+rect 236 256 244 264
+rect 396 256 404 264
+rect 588 256 596 264
+rect 844 256 852 264
+rect 124 236 132 244
+rect 732 236 740 244
+rect 734 206 742 214
+rect 748 206 756 214
+rect 762 206 770 214
+rect 28 176 36 184
+rect 812 176 820 184
+rect 188 156 196 164
+rect 604 156 612 164
+rect 860 156 868 164
+rect 220 136 228 144
+rect 428 136 436 144
+rect 572 136 580 144
+rect 316 116 324 124
+rect 412 116 420 124
+rect 476 116 484 124
+rect 766 116 774 124
+rect 860 116 868 124
+rect 284 100 292 108
+rect 476 96 484 104
+rect 908 76 916 84
+rect 284 36 292 44
+rect 476 36 484 44
+rect 270 6 278 14
+rect 284 6 292 14
+rect 298 6 306 14
+<< metal2 >>
+rect 264 406 270 414
+rect 278 406 284 414
+rect 292 406 298 414
+rect 306 406 312 414
+rect 349 404 355 443
+rect 13 284 19 296
+rect 29 184 35 296
+rect 221 284 227 296
+rect 124 264 132 270
+rect 221 144 227 236
+rect 317 124 323 296
+rect 397 264 403 396
+rect 525 324 531 376
+rect 397 164 403 256
+rect 573 144 579 236
+rect 285 44 291 100
+rect 264 6 270 14
+rect 278 6 284 14
+rect 292 6 298 14
+rect 306 6 312 14
+rect 429 -17 435 136
+rect 685 124 691 316
+rect 781 284 787 296
+rect 728 206 734 214
+rect 742 206 748 214
+rect 756 206 762 214
+rect 770 206 776 214
+rect 813 184 819 296
+rect 845 264 851 296
+rect 909 284 915 296
+rect 861 124 867 156
+rect 477 44 483 96
+rect 909 84 915 96
+rect 413 -23 435 -17
+<< m3contact >>
+rect 270 406 278 414
+rect 284 406 292 414
+rect 298 406 306 414
+rect 348 396 356 404
+rect 396 396 404 404
+rect 12 296 20 304
+rect 28 296 36 304
+rect 220 296 228 304
+rect 124 256 132 264
+rect 236 256 244 264
+rect 124 236 132 244
+rect 220 236 228 244
+rect 188 156 196 164
+rect 620 296 628 304
+rect 428 276 436 284
+rect 572 276 580 284
+rect 588 256 596 264
+rect 572 236 580 244
+rect 396 156 404 164
+rect 604 156 612 164
+rect 316 116 324 124
+rect 412 116 420 124
+rect 270 6 278 14
+rect 284 6 292 14
+rect 298 6 306 14
+rect 844 296 852 304
+rect 908 296 916 304
+rect 780 276 788 284
+rect 732 236 740 244
+rect 734 206 742 214
+rect 748 206 756 214
+rect 762 206 770 214
+rect 476 116 484 124
+rect 684 116 692 124
+rect 764 116 766 124
+rect 766 116 772 124
+rect 860 116 868 124
+rect 908 96 916 104
+<< metal3 >>
+rect 264 414 312 416
+rect 264 406 268 414
+rect 278 406 284 414
+rect 292 406 298 414
+rect 308 406 312 414
+rect 264 404 312 406
+rect 356 397 396 403
+rect -19 297 12 303
+rect 36 297 220 303
+rect 228 297 620 303
+rect 628 297 844 303
+rect 916 297 947 303
+rect 436 277 572 283
+rect 580 277 780 283
+rect 132 257 236 263
+rect 244 257 588 263
+rect 132 237 220 243
+rect 580 237 732 243
+rect 728 214 776 216
+rect 728 206 732 214
+rect 742 206 748 214
+rect 756 206 762 214
+rect 772 206 776 214
+rect 728 204 776 206
+rect 196 157 396 163
+rect 404 157 604 163
+rect 324 117 412 123
+rect 420 117 476 123
+rect 692 117 764 123
+rect 772 117 860 123
+rect 916 97 947 103
+rect 264 14 312 16
+rect 264 6 268 14
+rect 278 6 284 14
+rect 292 6 298 14
+rect 308 6 312 14
+rect 264 4 312 6
+<< m4contact >>
+rect 268 406 270 414
+rect 270 406 276 414
+rect 284 406 292 414
+rect 300 406 306 414
+rect 306 406 308 414
+rect 732 206 734 214
+rect 734 206 740 214
+rect 748 206 756 214
+rect 764 206 770 214
+rect 770 206 772 214
+rect 268 6 270 14
+rect 270 6 276 14
+rect 284 6 292 14
+rect 300 6 306 14
+rect 306 6 308 14
+<< metal4 >>
+rect 264 414 312 440
+rect 264 406 268 414
+rect 276 406 284 414
+rect 292 406 300 414
+rect 308 406 312 414
+rect 264 14 312 406
+rect 264 6 268 14
+rect 276 6 284 14
+rect 292 6 300 14
+rect 308 6 312 14
+rect 264 -40 312 6
+rect 728 214 776 440
+rect 728 206 732 214
+rect 740 206 748 214
+rect 756 206 764 214
+rect 772 206 776 214
+rect 728 -40 776 206
+use DFFSR  DFFSR_2
+timestamp 1697776516
+transform -1 0 360 0 -1 210
+box -4 -6 356 206
+use FILL  FILL_0_0_0
+timestamp 1697776516
+transform -1 0 376 0 -1 210
+box -4 -6 20 206
+use BUFX2  BUFX2_1
+timestamp 1697776516
+transform -1 0 56 0 1 210
+box -4 -6 52 206
+use XNOR2X1  XNOR2X1_1
+timestamp 1697776516
+transform 1 0 56 0 1 210
+box -4 -6 116 206
+use FILL  FILL_1_0_0
+timestamp 1697776516
+transform -1 0 184 0 1 210
+box -4 -6 20 206
+use FILL  FILL_1_0_1
+timestamp 1697776516
+transform -1 0 200 0 1 210
+box -4 -6 20 206
+use FILL  FILL_1_0_2
+timestamp 1697776516
+transform -1 0 216 0 1 210
+box -4 -6 20 206
+use DFFSR  DFFSR_1
+timestamp 1697776516
+transform -1 0 568 0 1 210
+box -4 -6 356 206
+use INVX2  INVX2_1
+timestamp 1697776516
+transform -1 0 440 0 -1 210
+box -4 -6 36 206
+use FILL  FILL_0_0_2
+timestamp 1697776516
+transform -1 0 408 0 -1 210
+box -4 -6 20 206
+use FILL  FILL_0_0_1
+timestamp 1697776516
+transform -1 0 392 0 -1 210
+box -4 -6 20 206
+use NAND2X1  NAND2X1_1
+timestamp 1697776516
+transform 1 0 712 0 1 210
+box -4 -6 52 206
+use FILL  FILL_1_1_2
+timestamp 1697776516
+transform 1 0 696 0 1 210
+box -4 -6 20 206
+use FILL  FILL_1_1_1
+timestamp 1697776516
+transform 1 0 680 0 1 210
+box -4 -6 20 206
+use FILL  FILL_1_1_0
+timestamp 1697776516
+transform 1 0 664 0 1 210
+box -4 -6 20 206
+use OAI21X1  OAI21X1_1
+timestamp 1697776516
+transform 1 0 600 0 1 210
+box -4 -6 68 206
+use INVX1  INVX1_3
+timestamp 1697776516
+transform -1 0 600 0 1 210
+box -4 -6 36 206
+use DFFSR  DFFSR_3
+timestamp 1697776516
+transform 1 0 440 0 -1 210
+box -4 -6 356 206
+use FILL  FILL_0_1_0
+timestamp 1697776516
+transform -1 0 808 0 -1 210
+box -4 -6 20 206
+use FILL  FILL_0_1_1
+timestamp 1697776516
+transform -1 0 824 0 -1 210
+box -4 -6 20 206
+use FILL  FILL_0_1_2
+timestamp 1697776516
+transform -1 0 840 0 -1 210
+box -4 -6 20 206
+use INVX1  INVX1_2
+timestamp 1697776516
+transform -1 0 872 0 -1 210
+box -4 -6 36 206
+use BUFX2  BUFX2_3
+timestamp 1697776516
+transform 1 0 872 0 -1 210
+box -4 -6 52 206
+use NAND3X1  NAND3X1_1
+timestamp 1697776516
+transform -1 0 824 0 1 210
+box -4 -6 68 206
+use INVX1  INVX1_1
+timestamp 1697776516
+transform -1 0 856 0 1 210
+box -4 -6 36 206
+use BUFX2  BUFX2_2
+timestamp 1697776516
+transform 1 0 856 0 1 210
+box -4 -6 52 206
+use FILL  FILL_2_1
+timestamp 1697776516
+transform 1 0 904 0 1 210
+box -4 -6 20 206
+<< labels >>
+flabel metal4 s 264 -40 312 -16 7 FreeSans 24 270 0 0 vdd
+port 0 nsew
+flabel metal4 s 728 -40 776 -16 7 FreeSans 24 270 0 0 gnd
+port 1 nsew
+flabel metal2 s 349 437 355 443 3 FreeSans 24 90 0 0 clk
+port 2 nsew
+flabel metal2 s 413 -23 419 -17 7 FreeSans 24 270 0 0 rst
+port 3 nsew
+flabel metal3 s -19 297 -13 303 7 FreeSans 24 0 0 0 count[0]
+port 4 nsew
+flabel metal3 s 941 297 947 303 3 FreeSans 24 0 0 0 count[1]
+port 5 nsew
+flabel metal3 s 941 97 947 103 3 FreeSans 24 0 0 0 count[2]
+port 6 nsew
+<< end >>

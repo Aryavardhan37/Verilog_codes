@@ -1,0 +1,124 @@
+$date
+	Wed Apr  3 15:34:23 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module jk_flip_flop_tb $end
+$var wire 1 ! Q_tb $end
+$var wire 1 " Q_bar_tb $end
+$var reg 1 # J_tb $end
+$var reg 1 $ K_tb $end
+$var reg 1 % clk_tb $end
+$var reg 1 & reset_tb $end
+$scope module jk_ff_inst $end
+$var wire 1 # J $end
+$var wire 1 $ K $end
+$var wire 1 % clk $end
+$var wire 1 & reset $end
+$var reg 1 ! Q $end
+$var reg 1 " Q_bar $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1&
+0%
+0$
+0#
+x"
+x!
+$end
+#5
+1%
+#10
+1"
+0!
+0%
+0&
+#15
+1%
+#20
+0%
+#25
+1%
+#30
+0%
+1$
+#35
+1%
+#40
+0%
+0$
+1#
+#45
+1%
+#50
+0%
+1$
+#55
+1%
+#60
+0%
+0$
+0#
+#65
+1%
+#70
+0%
+1$
+#75
+1%
+#80
+0%
+0$
+1#
+#85
+1%
+#90
+0%
+1$
+#95
+1%
+#100
+0%
+#105
+1%
+#110
+0%
+#115
+1%
+#120
+0%
+#125
+1%
+#130
+0%
+#135
+1%
+#140
+0%
+#145
+1%
+#150
+0%
+#155
+1%
+#160
+0%
+#165
+1%
+#170
+0%
+#175
+1%
+#180
+0%
+#185
+1%
+#190
+0%

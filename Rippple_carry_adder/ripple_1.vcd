@@ -1,0 +1,30 @@
+$date
+	Fri Feb  9 11:23:44 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_ripple_adder $end
+$var wire 1 ! cout $end
+$var wire 4 " sum [3:0] $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+b0 #
+bz "
+z!
+$end
+#10
+b1011 $
+b1101 #
+#20
+b1 $
+b1111 #
+#30

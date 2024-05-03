@@ -1,0 +1,13 @@
+gnd 1 BUFX2_2 A 161 1800 2 -1 1
+gnd 1 BUFX2_1 A 1 1800 2 -1 1
+cout 2 twpin_cout cout -699 800 -1 1 1
+cout 2 PSEUDO_CELL PSEUDO_PIN -399 2800 2 -2 0
+cout 2 PSEUDO_CELL PSEUDO_PIN -399 2800 -1 -1 0
+cout 2 BUFX2_1 Y -329 1800 2 -1 1
+sum 3 twpin_sum sum 861 800 -2 1 1
+sum 3 PSEUDO_CELL PSEUDO_PIN 561 2800 2 2 0
+sum 3 PSEUDO_CELL PSEUDO_PIN 561 2800 -2 -1 0
+sum 3 BUFX2_2 Y 491 1800 2 -1 1
+a 4 twpin_a a 861 1200 -2 1 1
+b 5 twpin_b b -699 1250 -1 1 1
+cin 6 twpin_cin cin 80 2100 -4 1 1

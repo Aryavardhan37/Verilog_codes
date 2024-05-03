@@ -1,0 +1,40 @@
+Starting new log file Sun Oct 22 12:32:54 2023
+
+LEF Read, Line 191: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 192: NOTE:  Old format VIARULE ignored.
+Qflow project setup
+LEF Read, Line 196: NOTE:  Old format VIARULE ignored.
+--------------------------------
+LEF Read, Line 197: NOTE:  Old format VIARULE ignored.
+
+LEF Read, Line 207: NOTE:  Old format VIARULE ignored.
+Technology set to osu018 from existing qflow_vars.sh file
+LEF Read, Line 208: NOTE:  Old format VIARULE ignored.
+Regenerating files for existing project boolean_equation
+LEF Read, Line 212: NOTE:  Old format VIARULE ignored.
+Qrouter detail maze router version 1.4.59.T
+LEF Read, Line 213: NOTE:  Old format VIARULE ignored.
+Reading LEF data from file /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef.
+LEF Read, Line 223: NOTE:  Old format VIARULE ignored.
+LEF file:  Defines site core (ignored)
+LEF Read, Line 224: NOTE:  Old format VIARULE ignored.
+LEF read: Processed 2941 lines.
+LEF Read, Line 228: NOTE:  Old format VIARULE ignored.
+LEF Read: encountered 0 errors and 20 warnings total.
+LEF Read, Line 229: NOTE:  Old format VIARULE ignored.
+Vertical route layer at non-minimum pitch 1.6.  Using smaller pitch 0.8, will route on 1-of-2 tracks for layer metal6.
+LEF Read, Line 239: NOTE:  Old format VIARULE ignored.
+Running blif2cel to generate input files for graywolf
+LEF Read, Line 240: NOTE:  Old format VIARULE ignored.
+blif2cel.tcl --blif /home/aryavardhan/iverilog/lab_practices/synthesis/boolean_equation.blif  --lef  /usr/local/share/qflow/tech/osu018/osu018_stdcells.lef --cel /home/aryavardhan/iverilog/lab_practices/layout/boolean_equation.cel
+LEF Read, Line 244: NOTE:  Old format VIARULE ignored.
+No boolean_equation.cel1 file found for project. . . no partial blockages to apply to layout.
+LEF Read, Line 245: NOTE:  Old format VIARULE ignored.
+No boolean_equation.cel2 file found for project. . . continuing without pin placement hints
+LEF Read, Line 255: NOTE:  Old format VIARULE ignored.
+Running GrayWolf placement
+LEF Read, Line 256: NOTE:  Old format VIARULE ignored.
+graywolf  boolean_equation
+LEF Read, Line 260: NOTE:  Old format VIARULE ignored.
+LEF Read, Line 261: NOTE:  Old format VIARULE ignored.

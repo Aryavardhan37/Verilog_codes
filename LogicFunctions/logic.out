@@ -1,0 +1,81 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55fc603db390 .scope module, "logic_tb" "logic_tb" 2 1;
+ .timescale 0 0;
+v0x55fc60400ef0_0 .net "f", 0 0, L_0x55fc60401bb0;  1 drivers
+v0x55fc60400fb0_0 .net "g", 0 0, L_0x55fc604015d0;  1 drivers
+v0x55fc60401050_0 .net "h", 0 0, L_0x55fc60401a00;  1 drivers
+v0x55fc60401150_0 .var "x1", 0 0;
+v0x55fc60401220_0 .var "x2", 0 0;
+v0x55fc604012c0_0 .var "x3", 0 0;
+v0x55fc60401390_0 .var "x4", 0 0;
+S_0x55fc603b4430 .scope module, "uut" "logicfunctions" 2 5, 3 1 0, S_0x55fc603db390;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "x1"
+    .port_info 1 /INPUT 1 "x2"
+    .port_info 2 /INPUT 1 "x3"
+    .port_info 3 /INPUT 1 "x4"
+    .port_info 4 /OUTPUT 1 "g"
+    .port_info 5 /OUTPUT 1 "h"
+    .port_info 6 /OUTPUT 1 "f"
+L_0x55fc603d9df0 .functor AND 1, v0x55fc60401150_0, v0x55fc604012c0_0, C4<1>, C4<1>;
+L_0x55fc603d9e60 .functor AND 1, v0x55fc60401220_0, v0x55fc60401390_0, C4<1>, C4<1>;
+L_0x55fc604015d0 .functor OR 1, L_0x55fc603d9df0, L_0x55fc603d9e60, C4<0>, C4<0>;
+L_0x55fc60401730 .functor NOT 1, v0x55fc604012c0_0, C4<0>, C4<0>, C4<0>;
+L_0x55fc604017d0 .functor OR 1, v0x55fc60401150_0, L_0x55fc60401730, C4<0>, C4<0>;
+L_0x55fc60401890 .functor NOT 1, v0x55fc60401220_0, C4<0>, C4<0>, C4<0>;
+L_0x55fc60401940 .functor OR 1, L_0x55fc60401890, v0x55fc60401390_0, C4<0>, C4<0>;
+L_0x55fc60401a00 .functor AND 1, L_0x55fc604017d0, L_0x55fc60401940, C4<1>, C4<1>;
+L_0x55fc60401bb0 .functor OR 1, L_0x55fc604015d0, L_0x55fc60401a00, C4<0>, C4<0>;
+v0x55fc603b4600_0 .net *"_s0", 0 0, L_0x55fc603d9df0;  1 drivers
+v0x55fc60400440_0 .net *"_s10", 0 0, L_0x55fc60401890;  1 drivers
+v0x55fc60400520_0 .net *"_s12", 0 0, L_0x55fc60401940;  1 drivers
+v0x55fc604005e0_0 .net *"_s2", 0 0, L_0x55fc603d9e60;  1 drivers
+v0x55fc604006c0_0 .net *"_s6", 0 0, L_0x55fc60401730;  1 drivers
+v0x55fc604007f0_0 .net *"_s8", 0 0, L_0x55fc604017d0;  1 drivers
+v0x55fc604008d0_0 .net "f", 0 0, L_0x55fc60401bb0;  alias, 1 drivers
+v0x55fc60400990_0 .net "g", 0 0, L_0x55fc604015d0;  alias, 1 drivers
+v0x55fc60400a50_0 .net "h", 0 0, L_0x55fc60401a00;  alias, 1 drivers
+v0x55fc60400b10_0 .net "x1", 0 0, v0x55fc60401150_0;  1 drivers
+v0x55fc60400bd0_0 .net "x2", 0 0, v0x55fc60401220_0;  1 drivers
+v0x55fc60400c90_0 .net "x3", 0 0, v0x55fc604012c0_0;  1 drivers
+v0x55fc60400d50_0 .net "x4", 0 0, v0x55fc60401390_0;  1 drivers
+    .scope S_0x55fc603db390;
+T_0 ;
+    %vpi_call 2 16 "$dumpfile", "logic_vcd.vcd" {0 0 0};
+    %vpi_call 2 17 "$dumpvars", 32'sb00000000000000000000000000000001 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fc60401150_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fc60401220_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fc604012c0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fc60401390_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 20 "$display", "Test Case 1: x1=%b, x2=%b, x3=%b, x4=%b, g=%b, h=%b, f=%b", v0x55fc60401150_0, v0x55fc60401220_0, v0x55fc604012c0_0, v0x55fc60401390_0, v0x55fc60400fb0_0, v0x55fc60401050_0, v0x55fc60400ef0_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55fc60401150_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fc60401220_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fc604012c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55fc60401390_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 24 "$display", "Test Case 2: x1=%b, x2=%b, x3=%b, x4=%b, g=%b, h=%b, f=%b", v0x55fc60401150_0, v0x55fc60401220_0, v0x55fc604012c0_0, v0x55fc60401390_0, v0x55fc60400fb0_0, v0x55fc60401050_0, v0x55fc60400ef0_0 {0 0 0};
+    %vpi_call 2 25 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "logic_tb.v";
+    "logicfunctions.v";

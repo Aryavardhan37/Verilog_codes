@@ -1,0 +1,71 @@
+$date
+	Wed Jan 31 13:35:33 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux_16x1_tb $end
+$var wire 1 ! data_out $end
+$var reg 16 " data_in [15:0] $end
+$var reg 4 # sel [3:0] $end
+$scope module dut $end
+$var wire 16 $ data_in [15:0] $end
+$var wire 4 % sel [3:0] $end
+$var wire 1 ! data_out $end
+$var wire 8 & data_intermediate [7:0] $end
+$scope module mux1 $end
+$var wire 8 ' data_in [7:0] $end
+$var wire 3 ( sel [2:0] $end
+$var wire 1 ) data_out $end
+$upscope $end
+$scope module mux2 $end
+$var wire 8 * data_in [7:0] $end
+$var wire 3 + sel [2:0] $end
+$var wire 1 , data_out $end
+$upscope $end
+$scope module mux3 $end
+$var wire 1 - data_in0 $end
+$var wire 1 . data_in1 $end
+$var wire 1 / sel $end
+$var wire 1 ! data_out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1/
+0.
+1-
+0,
+b0 +
+b11000000 *
+1)
+b0 (
+b11 '
+bz01 &
+b1 %
+b1100000000000011 $
+b1 #
+b1100000000000011 "
+0!
+$end
+#10
+0!
+0-
+0.
+0)
+bz00 &
+0,
+b110 (
+b110 +
+b111101 '
+b0 *
+b1101 #
+b1101 %
+b111101 "
+b111101 $
+#20

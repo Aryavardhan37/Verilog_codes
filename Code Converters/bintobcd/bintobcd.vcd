@@ -1,0 +1,71 @@
+$date
+	Mon Mar  4 16:04:29 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_bintobcd $end
+$var wire 4 ! bcd [3:0] $end
+$var reg 4 " binary [3:0] $end
+$scope module UUT $end
+$var wire 4 # binary [3:0] $end
+$var reg 4 $ bcd [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b1 !
+b1 $
+b1 "
+b1 #
+#20
+b10 !
+b10 $
+b10 "
+b10 #
+#30
+b11 !
+b11 $
+b11 "
+b11 #
+#40
+b100 !
+b100 $
+b100 "
+b100 #
+#50
+b101 !
+b101 $
+b101 "
+b101 #
+#60
+b110 !
+b110 $
+b110 "
+b110 #
+#70
+b111 !
+b111 $
+b111 "
+b111 #
+#80
+b1000 !
+b1000 $
+b1000 "
+b1000 #
+#90
+b1001 !
+b1001 $
+b1001 "
+b1001 #
+#100

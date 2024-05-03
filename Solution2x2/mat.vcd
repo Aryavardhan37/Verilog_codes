@@ -1,0 +1,40 @@
+$date
+	Thu Jun  8 10:28:23 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module MatrixMultiplier_Testbench $end
+$var wire 16 ! result_real [15:0] $end
+$var wire 16 " result_imag [15:0] $end
+$var reg 8 # a_imag [7:0] $end
+$var reg 8 $ a_real [7:0] $end
+$var reg 8 % b_imag [7:0] $end
+$var reg 8 & b_real [7:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 &
+b101 %
+b10 $
+b11 #
+b10110 "
+b1111111111111001 !
+$end
+#10
+b1 %
+b1 &
+b1 #
+b0 !
+b10 "
+b1 $
+#20
+b10 %
+b1111111111111101 !
+b100 "
+b10 #
+#30

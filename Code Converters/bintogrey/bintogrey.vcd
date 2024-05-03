@@ -1,0 +1,56 @@
+$date
+	Thu Apr 25 12:32:49 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_bintogrey $end
+$var wire 4 ! grey_out [3:0] $end
+$var reg 4 " bin_in [3:0] $end
+$scope module dut $end
+$var wire 4 # bin_in [3:0] $end
+$var wire 4 $ grey_out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#10
+b0 !
+b0 $
+b0 "
+b0 #
+#20
+b11 !
+b11 $
+b1 "
+b1 #
+#30
+b110 !
+b110 $
+b10 "
+b10 #
+#40
+b1100 !
+b1100 $
+b100 "
+b100 #
+#50
+b1011 !
+b1011 $
+b1001 "
+b1001 #
+#60
+b1110 !
+b1110 $
+b1010 "
+b1010 #
+#70

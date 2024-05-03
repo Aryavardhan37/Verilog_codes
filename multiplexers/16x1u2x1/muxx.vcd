@@ -1,0 +1,35 @@
+$date
+	Wed Jan 31 13:12:37 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_162mux $end
+$var wire 1 ! data_out $end
+$var reg 16 " data_in [15:0] $end
+$var reg 4 # sel [3:0] $end
+$scope module uut $end
+$var wire 16 $ data_in [15:0] $end
+$var wire 4 % sel [3:0] $end
+$var reg 1 ! data_out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 %
+b1 $
+b0 #
+b1 "
+1!
+$end
+#10
+0!
+b101 #
+b101 %
+b101 "
+b101 $
+#20

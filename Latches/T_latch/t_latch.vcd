@@ -1,0 +1,38 @@
+$date
+	Wed Apr  3 09:22:50 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_latch_tb $end
+$var wire 1 ! q $end
+$var reg 1 " enable $end
+$var reg 1 # t $end
+$scope module uut $end
+$var wire 1 " enable $end
+$var wire 1 # t $end
+$var reg 1 ! q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x#
+x"
+x!
+$end
+#10
+1"
+1#
+#20
+0#
+#30
+0"
+1#
+#40
+1"
+0#
+#50

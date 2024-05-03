@@ -1,0 +1,32 @@
+$date
+	Fri Feb  9 11:23:02 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module ripple_carry_adder_tb $end
+$var wire 4 ! s [3:0] $end
+$var wire 1 " cout $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$var reg 1 % cin $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x%
+bx $
+bx #
+x"
+bx !
+$end
+#5
+0"
+b1011 !
+1%
+b101 $
+b101 #
+#10

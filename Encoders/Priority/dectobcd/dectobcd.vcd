@@ -1,0 +1,56 @@
+$date
+	Fri Feb 16 16:08:14 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_dectobcd $end
+$var wire 4 ! bcd_out [3:0] $end
+$var reg 4 " dec_in [3:0] $end
+$scope module dut $end
+$var wire 4 # dec_in [3:0] $end
+$var reg 4 $ bcd_out [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#10
+b0 !
+b0 $
+b0 "
+b0 #
+#20
+b1 !
+b1 $
+b1 "
+b1 #
+#30
+b10 !
+b10 $
+b10 "
+b10 #
+#40
+b100 !
+b100 $
+b100 "
+b100 #
+#50
+b1001 !
+b1001 $
+b1001 "
+b1001 #
+#60
+b0 !
+b0 $
+b1010 "
+b1010 #
+#70

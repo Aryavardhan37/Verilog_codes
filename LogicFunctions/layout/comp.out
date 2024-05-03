@@ -1,0 +1,48 @@
+
+Cell BUFX2 disconnected node: A
+Cell BUFX2 disconnected node: gnd
+Cell BUFX2 disconnected node: Y
+Cell BUFX2 disconnected node: vdd
+
+Subcircuit pins:
+Circuit 1: BUFX2                           |Circuit 2: BUFX2                           
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+gnd                                        |gnd                                        
+Y                                          |Y                                          
+vdd                                        |vdd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BUFX2 and BUFX2 are equivalent.
+
+Cell full_adder disconnected node: a
+Cell full_adder disconnected node: b
+Cell full_adder disconnected node: cin
+
+Cell full_adder disconnected node: a
+Cell full_adder disconnected node: b
+Cell full_adder disconnected node: cin
+
+Subcircuit summary:
+Circuit 1: full_adder                      |Circuit 2: full_adder                      
+-------------------------------------------|-------------------------------------------
+BUFX2 (2)                                  |BUFX2 (2)                                  
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: full_adder                      |Circuit 2: full_adder                      
+-------------------------------------------|-------------------------------------------
+cout                                       |cout                                       
+sum                                        |sum                                        
+vdd                                        |vdd                                        
+a                                          |a                                          
+b                                          |b                                          
+cin                                        |cin                                        
+(no matching pin)                          |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for full_adder and full_adder altered to match.
+Circuits match uniquely.

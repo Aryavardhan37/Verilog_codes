@@ -1,0 +1,60 @@
+$date
+	Wed Feb  7 15:10:49 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench_mux_16x1 $end
+$var wire 1 ! out $end
+$var reg 16 " data [15:0] $end
+$var reg 4 # sel [3:0] $end
+$scope module uut $end
+$var wire 16 $ data [15:0] $end
+$var wire 4 % sel [3:0] $end
+$var wire 8 & mux_1_out [7:0] $end
+$var reg 1 ! out $end
+$scope module mux_1 $end
+$var wire 8 ' data [7:0] $end
+$var wire 3 ( sel [2:0] $end
+$var reg 1 ) out $end
+$upscope $end
+$scope module mux_2 $end
+$var wire 8 * data [7:0] $end
+$var wire 3 + sel [2:0] $end
+$var reg 1 , out $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1,
+b0 +
+b11111111 *
+0)
+b0 (
+b11111110 '
+bz10 &
+b0 %
+b1111111111111110 $
+b0 #
+b1111111111111110 "
+0!
+$end
+#80
+1!
+bz11 &
+1)
+b1 (
+b1 +
+b11111111 '
+b10111111 *
+b1 #
+b1 %
+b101111111111#30
+ "
+b1011111111111111 $
+#120

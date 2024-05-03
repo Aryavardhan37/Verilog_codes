@@ -1,0 +1,146 @@
+magic
+tech scmos
+timestamp 1706514691
+<< metal1 >>
+rect 76 164 84 166
+rect 76 160 78 164
+rect 82 160 84 164
+rect 76 158 84 160
+rect 12 143 20 144
+rect 172 143 180 144
+rect 12 142 67 143
+rect 12 138 14 142
+rect 18 138 67 142
+rect 12 137 67 138
+rect 141 142 180 143
+rect 141 138 174 142
+rect 178 138 180 142
+rect 141 137 180 138
+rect 12 136 20 137
+rect 172 136 180 137
+rect 92 123 100 124
+rect 92 122 115 123
+rect 92 118 94 122
+rect 98 118 115 122
+rect 92 117 115 118
+rect 92 116 100 117
+rect 8 12 56 14
+rect 8 8 16 12
+rect 20 8 30 12
+rect 34 8 44 12
+rect 48 8 56 12
+rect 8 6 56 8
+<< m2contact >>
+rect 78 160 82 164
+rect 14 138 18 142
+rect 174 138 178 142
+rect 94 118 98 122
+rect 16 8 20 12
+rect 30 8 34 12
+rect 44 8 48 12
+<< metal2 >>
+rect 76 164 84 166
+rect 76 160 78 164
+rect 82 163 84 164
+rect 82 160 99 163
+rect 76 158 99 160
+rect 77 157 99 158
+rect 12 142 20 144
+rect 12 138 14 142
+rect 18 138 20 142
+rect 12 136 20 138
+rect 13 124 19 136
+rect 93 124 99 157
+rect 172 142 180 144
+rect 172 138 174 142
+rect 178 138 180 142
+rect 172 136 180 138
+rect 173 124 179 136
+rect 12 122 20 124
+rect 12 118 14 122
+rect 18 118 20 122
+rect 12 116 20 118
+rect 92 122 100 124
+rect 92 118 94 122
+rect 98 118 100 122
+rect 92 116 100 118
+rect 172 122 180 124
+rect 172 118 174 122
+rect 178 118 180 122
+rect 172 116 180 118
+rect 8 12 56 14
+rect 8 8 16 12
+rect 20 8 30 12
+rect 34 8 44 12
+rect 48 8 56 12
+rect 8 6 56 8
+<< m3contact >>
+rect 14 118 18 122
+rect 174 118 178 122
+rect 16 8 20 12
+rect 30 8 34 12
+rect 44 8 48 12
+<< metal3 >>
+rect 12 123 20 124
+rect -19 122 20 123
+rect -19 118 14 122
+rect 18 118 20 122
+rect -19 117 20 118
+rect 12 116 20 117
+rect 172 122 180 124
+rect 172 118 174 122
+rect 178 118 180 122
+rect 172 116 180 118
+rect 8 12 56 16
+rect 8 8 14 12
+rect 20 8 30 12
+rect 34 8 44 12
+rect 50 8 56 12
+rect 8 4 56 8
+<< m4contact >>
+rect 14 8 16 12
+rect 16 8 18 12
+rect 30 8 34 12
+rect 46 8 48 12
+rect 48 8 50 12
+<< metal4 >>
+rect 8 12 56 240
+rect 8 8 14 12
+rect 18 8 30 12
+rect 34 8 46 12
+rect 50 8 56 12
+rect 8 0 56 8
+use BUFX2  BUFX2_2
+timestamp 1706514691
+transform 1 0 104 0 -1 210
+box -4 -6 52 206
+use BUFX2  BUFX2_1
+timestamp 1706514691
+transform -1 0 104 0 -1 210
+box -4 -6 52 206
+use FILL  FILL_0_0_2
+timestamp 1706514691
+transform -1 0 56 0 -1 210
+box -4 -6 20 206
+use FILL  FILL_0_0_1
+timestamp 1706514691
+transform -1 0 40 0 -1 210
+box -4 -6 20 206
+use FILL  FILL_0_0_0
+timestamp 1706514691
+transform -1 0 24 0 -1 210
+box -4 -6 20 206
+<< labels >>
+flabel metal4 s 8 0 56 24 7 FreeSans 24 270 0 0 vdd
+port 0 nsew
+flabel metal3 s 176 160 176 160 3 FreeSans 24 90 0 0 a
+port 1 nsew
+flabel metal3 s -16 160 -16 160 7 FreeSans 24 90 0 0 b
+port 2 nsew
+flabel metal2 s 48 240 48 240 7 FreeSans 24 90 0 0 cin
+port 3 nsew
+flabel metal3 s 176 120 176 120 3 FreeSans 24 0 0 0 sum
+port 4 nsew
+flabel metal3 s -16 120 -16 120 7 FreeSans 24 0 0 0 cout
+port 5 nsew
+<< end >>

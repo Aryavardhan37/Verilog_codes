@@ -1,0 +1,12 @@
+Qflow project preparation output log Fri Oct 20 10:05:03 2023
+
+--------------------------------
+Qflow project setup
+--------------------------------
+
+Technology set to osu035
+Regenerating files for existing project mux4x1
+
+No actions specified on command line;
+creating qflow script file /home/aryavardhan/iverilog/lab_practices/3bit/qflow_exec.sh only.
+Uncomment lines in this file and source the file to run the flow.

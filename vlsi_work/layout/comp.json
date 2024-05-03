@@ -1,0 +1,118 @@
+[
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "C",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "B",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ], [
+        "A",
+        "gnd",
+        "Y",
+        "vdd"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "boolean_equation",
+      "boolean_equation"
+   ],
+   "devices": [
+       [
+         ["NAND3X1", 1],
+         ["BUFX2", 1],
+         ["NAND2X1", 1],
+         ["AND2X2", 1 ]
+       ], [
+         ["NAND3X1", 1 ],
+         ["BUFX2", 1 ],
+         ["NAND2X1", 1 ],
+         ["AND2X2", 1 ]
+       ]
+   ],
+   "nets": [
+    11,
+    11
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "B",
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "vdd",
+        "gnd"
+      ], [
+        "B",
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "vdd",
+        "gnd"
+      ]
+   ]
+  }
+]

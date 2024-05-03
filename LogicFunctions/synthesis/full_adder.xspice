@@ -1,0 +1,28 @@
+* XSpice netlist created from SPICE and liberty sources by spi2xspice.py
+*SPICE netlist created from BLIF module full_adder by blif2BSpice
+.subckt full_adder a_vdd a_gnd a_a a_b a_cin a_sum a_cout
+ABUFX2_1 [gnd] cout d_lut_BUFX2
+ABUFX2_2 [gnd] sum d_lut_BUFX2
+
+.model todig_3v3 adc_bridge(in_high=2.1999999999999997 in_low=1.0999999999999999 rise_delay=10n fall_delay=10n)
+.model toana_3v3 dac_bridge(out_high=3.3 out_low=0)
+
+.model ddflop d_dff(ic=0 rise_delay=1n fall_delay=1n)
+.model dzero d_pulldown(load=1p)
+.model done d_pullup(load=1p)
+
+AA2D1 [a_vdd] [vdd] todig_3v3
+AA2D2 [a_gnd] [gnd] todig_3v3
+AA2D3 [a_a] [a] todig_3v3
+AA2D4 [a_b] [b] todig_3v3
+AA2D5 [a_cin] [cin] todig_3v3
+AD2A1 [sum] [a_sum] toana_3v3
+AD2A2 [cout] [a_cout] toana_3v3
+
+.ends full_adder
+ 
+
+* BUFX2 A
+.model d_lut_BUFX2 d_lut (rise_delay=1n fall_delay=1n input_load=1p
++ table_values "01")
+.end

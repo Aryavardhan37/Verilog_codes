@@ -1,0 +1,93 @@
+VERSION 5.6 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "<>" ;
+DESIGN full_adder ;
+UNITS DISTANCE MICRONS 100 ;
+
+DIEAREA ( -480 0 ) ( 2400 2400 ) ;
+
+TRACKS Y 0 DO 13 STEP 200 LAYER metal1 ;
+TRACKS X -480.0 DO 19 STEP 160 LAYER metal2 ;
+TRACKS Y 0 DO 13 STEP 200 LAYER metal3 ;
+TRACKS X -320.0 DO 10 STEP 320 LAYER metal4 ;
+
+VIAS 3 ;
+- viagen21_post
++ RECT metal1 ( -240 -40 ) ( 240 40 )
++ RECT metal2 ( -240 -40 ) ( 240 40 )
++ RECT via1 ( -160 -20 ) ( -120 20 )
++ RECT via1 ( -20 -20 ) ( 20 20 )
++ RECT via1 ( 120 -20 ) ( 160 20 ) ;
+- viagen32_post
++ RECT metal3 ( -240 -40 ) ( 240 40 )
++ RECT metal2 ( -240 -40 ) ( 240 40 )
++ RECT via2 ( -160 -20 ) ( -120 20 )
++ RECT via2 ( -20 -20 ) ( 20 20 )
++ RECT via2 ( 120 -20 ) ( 160 20 ) ;
+- viagen43_post
++ RECT metal3 ( -240 -60 ) ( 240 60 )
++ RECT metal4 ( -240 -60 ) ( 240 60 )
++ RECT via3 ( -180 -20 ) ( -140 20 )
++ RECT via3 ( -20 -20 ) ( 20 20 )
++ RECT via3 ( 140 -20 ) ( 180 20 ) ;
+END VIAS
+
+COMPONENTS 8 ;
+- FILL_0_0_0 FILL + PLACED ( 80 100 ) S ;
+- FILL_0_0_1 FILL + PLACED ( 240 100 ) S ;
+- FILL_0_0_2 FILL + PLACED ( 400 100 ) S ;
+- BUFX2_1 BUFX2 + PLACED ( 560 100 ) S ;
+- BUFX2_2 BUFX2 + PLACED ( 1040 100 ) FS ;
+END COMPONENTS
+
+PINS 7 ;
+- vdd + NET vdd
+  + LAYER metal4 ( -240 -120 ) ( 240 120 )
+  + PLACED ( 320 120 ) N ;
+- a + NET a
+  + LAYER metal3 ( 0 0 ) ( 1 1 )
+  + PLACED ( 1760 1600 ) N ;
+- b + NET b
+  + LAYER metal3 ( 0 0 ) ( 1 1 )
+  + PLACED ( -160 1600 ) N ;
+- cin + NET cin
+  + LAYER metal2 ( 0 0 ) ( 1 1 )
+  + PLACED ( 480 2400 ) N ;
+- sum + NET sum
+  + LAYER metal3 ( 0 0 ) ( 1 1 )
+  + PLACED ( 1760 1200 ) N ;
+- cout + NET cout
+  + LAYER metal3 ( 0 0 ) ( 1 1 )
+  + PLACED ( -160 1200 ) N ;
+END PINS
+
+NETS 6 ;
+- gnd
+  ( BUFX2_2 A ) 
+  ( BUFX2_1 A ) ;
+- cout
+  ( PIN cout ) 
+  ( BUFX2_1 Y ) ;
+- sum
+  ( PIN sum ) 
+  ( BUFX2_2 Y ) ;
+- a
+  ( PIN a ) ;
+- b
+  ( PIN b ) ;
+- cin
+  ( PIN cin ) ;
+END NETS
+
+SPECIALNETS 2 ;
+- vdd
++ FIXED metal1 80 ( 320 100 ) ( * * ) viagen21_post
+  NEW metal2 80 ( 320 100 ) ( * * ) viagen32_post
+  NEW metal3 120 ( 320 100 ) ( * * ) viagen43_post
+  NEW metal4 480 ( 320 0 ) ( * 2400 )
+ ;
+- gnd
+ ;
+END SPECIALNETS
+END DESIGN

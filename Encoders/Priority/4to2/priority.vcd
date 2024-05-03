@@ -1,0 +1,46 @@
+$date
+	Fri Feb 16 08:40:12 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_prior_enco_4to2 $end
+$var wire 2 ! out [1:0] $end
+$var reg 4 " input_data [3:0] $end
+$scope module dut $end
+$var wire 4 # input_data [3:0] $end
+$var reg 2 $ out [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx $
+bx #
+bx "
+bx !
+$end
+#10
+b11 !
+b11 $
+b0 "
+b0 #
+#20
+b0 !
+b0 $
+b1 "
+b1 #
+#30
+b10 !
+b10 $
+b100 "
+b100 #
+#40
+b11 !
+b11 $
+b0 "
+b0 #
+#50

@@ -1,0 +1,18 @@
+* NGSPICE file created from full_adder.ext - technology: scmos
+
+* Black-box entry subcircuit for FILL abstract view
+.subckt FILL gnd vdd
+.ends
+
+* Black-box entry subcircuit for BUFX2 abstract view
+.subckt BUFX2 A gnd Y vdd
+.ends
+
+.subckt full_adder vdd a b cin sum cout
+XFILL_0_0_0 BUFX2_1/A vdd FILL
+XFILL_0_0_1 BUFX2_1/A vdd FILL
+XFILL_0_0_2 BUFX2_1/A vdd FILL
+XBUFX2_1 BUFX2_1/A BUFX2_1/A cout vdd BUFX2
+XBUFX2_2 BUFX2_1/A BUFX2_1/A sum vdd BUFX2
+.ends
+

@@ -1,0 +1,40 @@
+* XSpice netlist created from SPICE and liberty sources by spi2xspice.py
+*SPICE netlist created from BLIF module boolean_equation by blif2BSpice
+.subckt boolean_equation a_vdd a_gnd a_A a_B a_C a_D a_E a_F
+ANAND2X1_1 [B A] _0_ d_lut_NAND2X1
+ANAND3X1_1 [D C E] _1_ d_lut_NAND3X1
+AAND2X2_1 [_1_ _0_] _2_ d_lut_AND2X2
+ABUFX2_1 [_2_] F d_lut_BUFX2
+
+.model todig_1v8 adc_bridge(in_high=1.2 in_low=0.6 rise_delay=1n fall_delay=1n)
+.model toana_1v8 dac_bridge(out_high=1.8 out_low=0)
+
+.model ddflop d_dff(ic=0 rise_delay=100p fall_delay=100p)
+.model dzero d_pulldown(load=500f)
+.model done d_pullup(load=500f)
+
+AA2D1 [a_vdd] [vdd] todig_1v8
+AA2D2 [a_gnd] [gnd] todig_1v8
+AA2D3 [a_A] [A] todig_1v8
+AA2D4 [a_B] [B] todig_1v8
+AA2D5 [a_C] [C] todig_1v8
+AA2D6 [a_D] [D] todig_1v8
+AA2D7 [a_E] [E] todig_1v8
+AD2A1 [F] [a_F] toana_1v8
+
+.ends boolean_equation
+ 
+
+* NAND2X1 (!(A B))
+.model d_lut_NAND2X1 d_lut (rise_delay=100p fall_delay=100p input_load=500f
++ table_values "1110")
+* NAND3X1 (!((A B) C))
+.model d_lut_NAND3X1 d_lut (rise_delay=100p fall_delay=100p input_load=500f
++ table_values "11111110")
+* AND2X2 (A B)
+.model d_lut_AND2X2 d_lut (rise_delay=100p fall_delay=100p input_load=500f
++ table_values "0001")
+* BUFX2 A
+.model d_lut_BUFX2 d_lut (rise_delay=100p fall_delay=100p input_load=500f
++ table_values "01")
+.end

@@ -1,0 +1,59 @@
+Qflow LVS logfile created on Monday 29 January 2024 01:21:31 PM IST
+netgen ${lvs_options} -batch lvs "${rootname}.spice ${rootname}" 
+	"${synthdir}/${rootname}.spc ${rootname}" ${setup_script} ${outfile} 
+	-json -blackbox
+Netgen 1.5.134 compiled on Thursday 19 October 2023 09:04:19 PM IST
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Generating JSON file result
+Treating empty subcircuits as black-box cells
+Reading netlist file full_adder.spice
+Reading netlist file /home/aryavardhan/iverilog/ddv/LogicFunctions/synthesis/full_adder.spc
+Reading setup file /usr/local/share/qflow/tech/osu035/osu035_setup.tcl
+No property w found for device r
+No property l found for device r
+Error /usr/local/share/qflow/tech/osu035/osu035_setup.tcl:5 (ignoring), No such cell or bad file number!
+Error /usr/local/share/qflow/tech/osu035/osu035_setup.tcl:6 (ignoring), No such cell or bad file number!
+Warning:  There were errors reading the setup file
+Comparison output logged to file comp.out
+Logging to file "comp.out" enabled
+Contents of circuit 1:  Circuit: 'BUFX2'
+Circuit BUFX2 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'BUFX2'
+Circuit BUFX2 contains 4 device instances.
+  Class: pfet                  instances:   2
+  Class: nfet                  instances:   2
+Circuit contains 5 nets.
+
+Circuit BUFX2 contains no devices.
+Contents of circuit 1:  Circuit: 'full_adder'
+Circuit full_adder contains 2 device instances.
+  Class: BUFX2                 instances:   2
+Circuit contains 4 nets, and 3 disconnected pins.
+Contents of circuit 2:  Circuit: 'full_adder'
+Circuit full_adder contains 2 device instances.
+  Class: BUFX2                 instances:   2
+Circuit contains 4 nets, and 3 disconnected pins.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+Circuits match with 2 symmetries.
+Netlists match uniquely.
+Circuits match correctly.
+Result: Circuits match uniquely.
+Logging to file "comp.out" disabled
+LVS Done.
+/usr/local/share/qflow/scripts/count_lvs.py
+LVS reports:
+    net count difference = 0
+    device count difference = 0
+    unmatched nets = 0
+    unmatched devices = 0
+    unmatched pins = 1
+    property failures = 0
+
+Total errors = 1
+Design fails LVS with 1 errors.
+See lvs.log and comp.out for error details.
+Synthesis flow stopped due to error condition.
